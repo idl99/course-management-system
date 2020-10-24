@@ -1,6 +1,7 @@
 package com.ihandilnath.coursemanagementsystem.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
@@ -33,10 +34,15 @@ public abstract class User {
     public User() {
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private long userId;
+
     /**
      *
      */
-    @Id
+    @Column(unique = true)
     private String email;
 
     /**
@@ -47,7 +53,7 @@ public abstract class User {
     /**
      *
      */
-    @JsonIgnore // Prevent this field from being exposed in the API response
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // Prevent this field from being exposed in the API response
     private char[] password; // TODO exclude this field from Spring Data Rest in response
 
     // ================================================================================
@@ -58,6 +64,14 @@ public abstract class User {
     //
     // 2) Springfox Swagger UI won't be able to generate the request templates
     // ================================================================================
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
 
     public String getEmail() {
         return email;
