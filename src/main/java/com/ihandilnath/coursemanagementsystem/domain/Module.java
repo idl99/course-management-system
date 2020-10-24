@@ -2,12 +2,15 @@ package com.ihandilnath.coursemanagementsystem.domain;
 
 import com.ihandilnath.coursemanagementsystem.domain.CourseworkSpecification;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.*;
 
 /**
  * @author Ihan Dilnath
  */
+@Entity
+@Table(name = "modules")
 public class Module {
 
     /**
@@ -19,6 +22,7 @@ public class Module {
     /**
      *
      */
+    @Id
     private String moduleCode;
 
     /**
@@ -29,21 +33,25 @@ public class Module {
     /**
      *
      */
+    @ManyToMany
     private List<Student> enrolledStudents;
 
     /**
      *
      */
+    @ManyToMany
     private List<Instructor> instructors;
 
     /**
      *
      */
+    @OneToMany
     private List<DiscussionThread> discussionForum;
 
     /**
      *
      */
+    @OneToMany
     private List<CourseworkSpecification> courseworks;
 
 

@@ -1,10 +1,13 @@
 package com.ihandilnath.coursemanagementsystem.domain;
 
+import javax.persistence.*;
 import java.util.*;
 
 /**
  * @author Ihan Dilnath
  */
+@Entity
+@Table(name = "messages")
 public class Message {
 
     /**
@@ -12,6 +15,10 @@ public class Message {
      */
     public Message() {
     }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int messageId;
 
     /**
      *
@@ -26,6 +33,7 @@ public class Message {
     /**
      *
      */
+    @ManyToOne
     private User author;
 
 

@@ -3,12 +3,15 @@ package com.ihandilnath.coursemanagementsystem.domain;
 import com.ihandilnath.coursemanagementsystem.domain.GradedSubmission;
 import com.ihandilnath.coursemanagementsystem.domain.Student;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.*;
 
 /**
  * @author Ihan Dilnath
  */
+@Entity
+@Table(name = "courseworkSubmissions")
 public class CourseworkSubmission {
 
     /**
@@ -16,6 +19,10 @@ public class CourseworkSubmission {
      */
     public CourseworkSubmission() {
     }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int submissionId;
 
     /**
      *
@@ -30,6 +37,7 @@ public class CourseworkSubmission {
     /**
      *
      */
+    @ManyToOne
     private Student submittedBy;
 
 

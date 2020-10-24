@@ -1,11 +1,14 @@
 package com.ihandilnath.coursemanagementsystem.domain;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.*;
 
 /**
  * @author Ihan Dilnath
  */
+@Entity
+@Table(name = "courseworkSpecifications")
 public class CourseworkSpecification {
 
     /**
@@ -13,6 +16,10 @@ public class CourseworkSpecification {
      */
     public CourseworkSpecification() {
     }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
 
     /**
      *
@@ -37,6 +44,7 @@ public class CourseworkSpecification {
     /**
      *
      */
+    @OneToMany
     private List<CourseworkSubmission> submissions;
 
 

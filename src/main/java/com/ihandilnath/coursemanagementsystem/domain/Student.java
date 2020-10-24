@@ -2,11 +2,13 @@ package com.ihandilnath.coursemanagementsystem.domain;
 
 import com.ihandilnath.coursemanagementsystem.domain.User;
 
+import javax.persistence.Entity;
 import java.util.*;
 
 /**
  * @author Ihan Dilnath
  */
+@Entity
 public class Student extends User {
 
     /**
@@ -14,11 +16,6 @@ public class Student extends User {
      */
     public Student() {
     }
-
-    /**
-     *
-     */
-    private String studentId;
 
     /**
      *
