@@ -26,7 +26,7 @@ public abstract class User {
     /**
      *
      */
-    private char password;
+    private char[] password;
 
 
 }
