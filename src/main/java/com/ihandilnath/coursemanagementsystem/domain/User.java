@@ -10,6 +10,7 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent common attributes and operations of all user types (Admins, Students and Instructors).
  */
 // @MappedSuperclass can't be used since ancestors are associated with other classes
 @Entity

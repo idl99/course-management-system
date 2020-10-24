@@ -8,6 +8,8 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent the modules for which student/instructor enrollment, coursework management and discussion forums
+ * are made available
  */
 @Entity
 @Table(name = "modules")

@@ -8,6 +8,7 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent the coursework specification and its details such as name, description, and deadline.
  */
 @Entity
 @Table(name = "courseworkSpecifications")

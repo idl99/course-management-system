@@ -7,6 +7,7 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent messages sent in threads of the discussion forum
  */
 @Entity
 @Table(name = "messages")

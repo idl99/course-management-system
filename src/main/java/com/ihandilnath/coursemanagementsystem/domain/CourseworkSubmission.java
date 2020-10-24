@@ -10,6 +10,7 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent coursework submissions submitted by students for their respective modules.
  */
 @Entity
 @Table(name = "courseworkSubmissions")

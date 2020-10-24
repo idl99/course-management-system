@@ -8,6 +8,8 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent threads of the discussion forums in the system where students and instructors
+ * can engage with each other through messages.
  */
 @Entity
 @Table(name = "discussionThreads")

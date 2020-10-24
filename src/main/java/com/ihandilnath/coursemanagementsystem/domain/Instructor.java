@@ -7,6 +7,7 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent lecturers and tutors who deliver the module to the students
  */
 @Entity
 public class Instructor extends User {

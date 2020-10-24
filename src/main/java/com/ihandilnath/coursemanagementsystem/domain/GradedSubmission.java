@@ -7,6 +7,7 @@ import java.util.*;
 
 /**
  * @author Ihan Dilnath
+ * Class to represent a submission after it has been graded. Inherits properties from Coursework submission.
  */
 @Entity
 public class GradedSubmission extends CourseworkSubmission {
