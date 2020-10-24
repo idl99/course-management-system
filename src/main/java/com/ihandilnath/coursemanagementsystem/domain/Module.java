@@ -86,4 +86,52 @@ public class Module {
         return null;
     }
 
+    public String getModuleCode() {
+        return moduleCode;
+    }
+
+    public void setModuleCode(String moduleCode) {
+        this.moduleCode = moduleCode;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Student> getEnrolledStudents() {
+        return enrolledStudents;
+    }
+
+    public void setEnrolledStudents(List<Student> enrolledStudents) {
+        this.enrolledStudents = enrolledStudents;
+    }
+
+    public List<Instructor> getInstructors() {
+        return instructors;
+    }
+
+    public void setInstructors(List<Instructor> instructors) {
+        this.instructors = instructors;
+    }
+
+    public List<DiscussionThread> getDiscussionForum() {
+        return discussionForum;
+    }
+
+    public void setDiscussionForum(List<DiscussionThread> discussionForum) {
+        this.discussionForum = discussionForum;
+    }
+
+    public List<CourseworkSpecification> getCourseworks() {
+        return courseworks;
+    }
+
+    public void setCourseworks(List<CourseworkSpecification> courseworks) {
+        this.courseworks = courseworks;
+    }
+
 }

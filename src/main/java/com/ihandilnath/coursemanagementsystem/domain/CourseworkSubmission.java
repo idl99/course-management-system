@@ -52,4 +52,35 @@ public class CourseworkSubmission {
         return null;
     }
 
+    public long getSubmissionId() {
+        return submissionId;
+    }
+
+    public void setSubmissionId(long submissionId) {
+        this.submissionId = submissionId;
+    }
+
+    public LocalDateTime getSubmissionDateTime() {
+        return submissionDateTime;
+    }
+
+    public void setSubmissionDateTime(LocalDateTime submissionDateTime) {
+        this.submissionDateTime = submissionDateTime;
+    }
+
+    public String getStorageUrl() {
+        return storageUrl;
+    }
+
+    public void setStorageUrl(String storageUrl) {
+        this.storageUrl = storageUrl;
+    }
+
+    public Student getSubmittedBy() {
+        return submittedBy;
+    }
+
+    public void setSubmittedBy(Student submittedBy) {
+        this.submittedBy = submittedBy;
+    }
 }
