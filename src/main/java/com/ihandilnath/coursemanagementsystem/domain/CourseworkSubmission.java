@@ -22,7 +22,7 @@ public class CourseworkSubmission {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int submissionId;
+    private long submissionId;
 
     /**
      *

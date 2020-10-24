@@ -20,7 +20,7 @@ public class DiscussionThread {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int threadId;
+    private long threadId;
 
 
     /**
