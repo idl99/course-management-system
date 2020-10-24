@@ -1,5 +1,7 @@
 package com.ihandilnath.coursemanagementsystem.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -19,6 +21,7 @@ public class CourseworkSpecification {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private long id;
 
     /**

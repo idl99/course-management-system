@@ -1,5 +1,6 @@
 package com.ihandilnath.coursemanagementsystem.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.ihandilnath.coursemanagementsystem.domain.GradedSubmission;
 import com.ihandilnath.coursemanagementsystem.domain.Student;
 
@@ -22,6 +23,7 @@ public class CourseworkSubmission {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private long submissionId;
 
     /**
