@@ -1,5 +1,6 @@
 package com.ihandilnath.coursemanagementsystem.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
@@ -46,6 +47,7 @@ public abstract class User {
     /**
      *
      */
+    @JsonIgnore // Prevent this field from being exposed in the API response
     private char[] password; // TODO exclude this field from Spring Data Rest in response
 
     // ================================================================================
