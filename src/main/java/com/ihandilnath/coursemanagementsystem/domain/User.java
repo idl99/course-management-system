@@ -74,7 +74,7 @@ public abstract class User {
     }
 
     public char[] getPassword() {
-        return password;
+        return this.password;
     }
 
     public void setPassword(char[] password) {
