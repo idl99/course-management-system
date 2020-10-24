@@ -17,17 +17,4 @@ public class Student extends User {
     public Student() {
     }
 
-    /**
-     *
-     */
-    private String name;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 }
