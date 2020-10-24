@@ -9,7 +9,6 @@ import java.util.*;
  * @author Ihan Dilnath
  */
 @Entity
-@Table(name = "gradedSubmissions")
 public class GradedSubmission extends CourseworkSubmission {
 
     /**
