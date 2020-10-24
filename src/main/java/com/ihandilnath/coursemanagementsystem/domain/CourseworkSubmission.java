@@ -35,7 +35,7 @@ public class CourseworkSubmission {
     /**
      *
      */
-    private String storageUrl;
+    private String content;
 
     /**
      *
@@ -71,12 +71,12 @@ public class CourseworkSubmission {
         this.submissionDateTime = submissionDateTime;
     }
 
-    public String getStorageUrl() {
-        return storageUrl;
+    public String getContent() {
+        return content;
     }
 
-    public void setStorageUrl(String storageUrl) {
-        this.storageUrl = storageUrl;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public Student getSubmittedBy() {
